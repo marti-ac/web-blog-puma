@@ -1,0 +1,98 @@
+:root {
+    --puma-black: #000000;
+    --puma-white: #FFFFFF;
+    --puma-red: #E32526;
+    --puma-gray: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--puma-black);
+}
+
+/* NAVBAR */
+.navbar-puma {
+    background-color: var(--puma-black);
+    padding: 15px 0;
+}
+
+
+.logo-puma {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--puma-white);
+    text-decoration: none;
+}
+
+.logo-puma:hover {
+    color: var(--puma-white);
+}
+
+/* Links del menú en desktop */
+.nav-link-puma {
+    color: var(--puma-white) !important;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link-puma:hover {
+    color: var(--puma-red) !important;
+}
+
+/* Iconos  */
+.navbar-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-icons a {
+    color: var(--puma-white);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-icons a:hover {
+    color: var(--puma-red);
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+    border: none;
+    padding: 5px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Menú móvil  */
+.navbar-collapse {
+    background-color: var(--puma-black);
+}
+
+@media (max-width: 991px) {
+    .nav-link-puma {
+        padding: 12px 0;
+        border-bottom: 1px solid #333;
+        margin: 0;
+    }
+    
+    .navbar-icons {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #333;
+    }
+}
